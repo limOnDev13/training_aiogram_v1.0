@@ -1,12 +1,13 @@
 import requests
 import time
+import add_functions
 
 
 API_URL: str = 'https://api.telegram.org/bot'  # По сути своей
 # таким образом можно обращаться к любому открытому API,
 # необязательно к телеге
 # не выкладывать токен на Гит!!!!!!!!
-BOT_TOKEN: str = '6062355303:AAGWf8Pseg9XloZDpiA0PmMsxmhNi7orb5w'
+BOT_TOKEN: str = add_functions.read_token_from_txt()
 # Это сообщение будет выводиться при каждом апдейте.
 TEXT: str = 'Чувак, вот тебе сообщение...'
 # Максимальное число апдейтов
