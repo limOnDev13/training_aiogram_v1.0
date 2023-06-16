@@ -35,3 +35,6 @@ while counter < MAX_COUNTER:
 
             counter += 1
             time.sleep(1)
+
+
+print('Hello')
